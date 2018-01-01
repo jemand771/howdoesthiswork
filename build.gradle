@@ -1,1 +1,8 @@
 apply plugin: 'java'
+
+mainClassName = 'main.Main'
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
