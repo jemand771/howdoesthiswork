@@ -9,5 +9,11 @@ public class Main {
 		System.out.println("furthermore i changed stuff");
 
 		System.out.println("now im supposed to be nice :)");
+		System.out.println("8 / 2 = " + divide(8, 2));
+	}
+	
+	public static int divide(int x, int y) {
+		
+		return x / y;
 	}
 }

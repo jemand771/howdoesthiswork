@@ -1,5 +1,11 @@
 apply plugin: 'java'
 
+repositories { mavenCentral() }
+dependencies {
+    testCompile 'junit:junit:4.12'
+    compile 'junit:junit:4.12'
+}
+
 sourceSets {
    main {
       java {
@@ -13,13 +19,17 @@ sourceSets {
       }
    }
 }
-
-repositories {
-   mavenCentral()
-}
-
+ 
 dependencies {
-    compile 'org.mindrot:jbcrypt:0.3m'
+    testCompile(
+            'org.junit.jupiter:junit-jupiter-api:5.0.1'
+    )
+    compile(
+            'org.junit.jupiter:junit-jupiter-api:5.0.1'
+    )
+    testRuntime(
+            'org.junit.jupiter:junit-jupiter-engine:5.0.1',
+    )
 }
 
 jar {
