@@ -8,6 +8,6 @@ public class Main {
 		System.out.println("so this works for now");
 		System.out.println("furthermore i changed stuff");
 
-		System.out.println("now im supposed to be nice :)");
+		System.out.println("now im supposed to be nice :)")
 	}
 }
